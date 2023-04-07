@@ -1,0 +1,14 @@
+.imagebackground{
+    background:url("https://media.istockphoto.com/vectors/mean-girls-gossiping-vector-id691268540?k=20&m=691268540&s=612x612&w=0&h=Ggz1l7kqJLm3GkpWteo0RJ5WTSwpEO-We91BwwglCG0=");
+    opacity: 0.4;
+    /* background-size: cover; */
+    z-index: -1;
+    
+}
+
+
+.textbody{
+    z-index: 1;
+    color:darkblue;
+    font-weight:bold; 
+}

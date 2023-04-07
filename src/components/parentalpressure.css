@@ -1,0 +1,12 @@
+.imagebackground1{
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS56oVuSN-LUxcEmBqcBwo5yyrZyUZNeQVNnQ&usqp=CAU");
+    opacity: 0.4;
+    /* background-size: cover; */
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:blue;
+    font-weight:bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
