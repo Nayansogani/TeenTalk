@@ -1,0 +1,86 @@
+/* CSS reset */
+*{
+    margin:0;
+    padding:0;
+}
+/* navigation bar */
+#navbar{
+    position: relative;
+    display:flex;
+    align-items:center ;
+}
+/* logo and image */
+#logo{
+    margin:34px 45px;
+
+}
+#logo img{
+    height:56px;
+    margin:3px 6px;  
+}
+/* list styling */
+#navbar ul{
+    display:flex;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity:.8;
+}
+/* list styling */
+#navbar ul li{
+    /* color:white; */
+    list-style: none;
+    font-size:1.3rem;
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+/* SEXUAL HELAHT */
+#sexualhealth{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:3px 200px;
+    height:400px;
+}
+#sexualhealth::before{
+
+     content:"";
+    background:url('https://sdyouthservices.org/wp-content/uploads/2020/06/SexualHealth_Featured-760x425.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity:.9;
+}
+/* .sexualhealtharticles{
+    display:flex;
+    /* justify-content: space-around; */
+    /* flex-direction:row;
+    flex
+    
+} */ 
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: DodgerBlue;
+    flex-direction: row;
+  }
+  
+  
+
+

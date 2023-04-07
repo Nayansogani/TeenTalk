@@ -1,0 +1,35 @@
+#image1
+{
+    position: relative;
+    left:5px;
+    top: 5px;
+}
+#Name{
+    position: fixed;
+    left:150px;
+    top : 52px;
+    color: white;
+    font-size: 40px;
+}
+#Desc{
+    position: fixed;
+    left:100px;
+    top : 250px;
+    color: white;
+    font-size: 17px;
+}
+#Clubh{
+    position: fixed;
+    left:100px;
+    top : 350px;
+    color: white;
+    font-size: 17px;
+}
+#ne,#yf,#cm{
+    position: relative;
+    left:100px;
+    color: white;
+    font-size: 17px;
+}body{
+    background-color:#b4ceff;
+}

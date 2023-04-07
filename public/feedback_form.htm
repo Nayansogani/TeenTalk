@@ -1,0 +1,83 @@
+<html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="clubpg.css">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<title>Feedback</title>
+<h1>We want to hear from you...</h1>
+	<video id="myVideo1" autoplay loop muted>
+			<source src="paint.mp4" type="video/mp4" />
+	</video>
+  </head>
+  <body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+class NameForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {val1: '',val2: '',val3: '',val4: '',val5: '',val6: '', val7: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+
+  }
+
+  handleChange(event) {
+    this.setState({val1: event.target.val1, val2: event.target.val2, val3: event.target.val3, val4: event.target.val4, val5: event.target.val5, val6: event.target.val6, val7: event.target.val7});
+  }
+
+  handleSubmit(event) {
+    alert('Thanks for the feedback');
+    event.preventDefault();
+  }
+  
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit} method="/formsubmit" action="post">
+        <label><br/>
+          First Name:
+          <input type="text" name="fname" value={this.state.val1} onChange={this.handleChange} />
+        </label>
+	<label>
+          Last Name:
+          <input type="text" name="lname" value={this.state.val2} onChange={this.handleChange} /><br/><br/>
+        </label>
+	<label>
+          Place:
+          <input type="text" name="place" value={this.state.val3} onChange={this.handleChange} /><br/><br/>
+	</label>
+	<label>
+          Age:
+          <input type="text" name="age" value={this.state.val4} onChange={this.handleChange} /><br/><br/>
+        </label>
+	<label>
+          Was this helpful? If so which part of it was most helpful?
+          <input type="textarea" name="help" value={this.state.val5} onChange={this.handleChange} /><br/><br/>
+        </label>
+	<label>
+          What kind of issue did it help you with?
+          <input type="checkbox" name="issue1" value={this.state.val6} onChange={this.handleChange} />Sexual Health <br/>
+	<input type="checkbox" name="issue2" value={this.state.val6} onChange={this.handleChange} />Peer presure <br/>
+	<input type="checkbox" name="issue3" value={this.state.val6} onChange={this.handleChange} />Depression<br/>
+	<input type="checkbox" name="issue4" value={this.state.val6} onChange={this.handleChange} />Anxiety<br/>
+	<input type="checkbox" name="issue5" value={this.state.val6} onChange={this.handleChange} />Suicidal thoughts<br/>
+	<input type="checkbox" name="issue6" value={this.state.val6} onChange={this.handleChange} />Parental pressure<br/>
+	<input type="checkbox" name="issue7" value={this.state.val6} onChange={this.handleChange} />General stress<br/><br/>
+	</label>
+	<label>
+          What can we improve on?
+          <input type="textarea" name="improve" value={this.state.val7} onChange={this.handleChange} /><br/>
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+    );
+  }
+}
+
+ReactDOM.render(<NameForm />,document.getElementById('root'));
+</script>
+</body>
+</html>

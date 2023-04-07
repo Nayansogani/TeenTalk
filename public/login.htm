@@ -1,0 +1,47 @@
+<html> 
+    <head> 
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <title>
+            Login/Sign-up
+        </title> 
+        <script> 
+        function init()
+        { 
+            bt=document.querySelector("#pass");
+            if(bt.type==="password")
+            bt.type="text"
+            else
+            bt.type="password"
+        }
+        function register(){
+            document.getElementById("submit").innerHTML=<a href="register.html">Click her</a>;
+        }
+        </script>
+		<video id="myVideo1" autoplay loop muted>
+			<source src="reg_video.mp4" type="video/mp4" />
+		</video>
+    </head>
+    <body>
+		<img src="logo.png" class="logo"/>
+        <div id="imgp">
+        <p id="clubdev1">TEEN TALK</p>
+        <p id="intro1">Welcome to Teen-talk.</br> We're glad to see you here! Our website aims at creating awareness and banishing taboos around mental and sexual health  </br> Login to enjoy our website even better. Happy healing! </p>
+        </div>
+        <div id="login">
+        <form action="/login" method="post"> 
+        </br></br>
+        <h1 id="form__title">Login</h1></br></br>
+        <input type="text" id="log" autofocus name="name" placeholder="Username"></input></br></br>
+        <input type="password" class="log" name="password" id="pass" placeholder="Enter password"></input></br></br>
+        <button id="submit" type="submit" >Submit</button>
+        <button id="reset" type="reset">Reset</button>
+        </form>
+        <form action="/register" method="post">
+            </br><h3 class="link">Don't have an account?</h3>
+            <!--<button id="submit" type="submit" onclick="register()">Register</button> -->
+            <a href="register.html" class="link1">Click here</a>
+        </form>
+    </div>
+
+</body>
+</html>
